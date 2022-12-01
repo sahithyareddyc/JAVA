@@ -1,0 +1,30 @@
+Define a function which can compute the sum of two numbers using recursion.
+
+sample input:
+
+4
+
+8
+
+Sample output:
+
+12
+
+import java.util.*;
+public class sotn
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(b==0)
+        {
+            System.out.print(a);
+        }
+        else
+        {
+            System.out.print(a+b);
+        }
+    }
+}
