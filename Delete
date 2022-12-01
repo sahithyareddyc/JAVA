@@ -1,0 +1,57 @@
+Write a C program to delete the element from the given location in an array:
+
+Input & Output Format:
+
+Input consists of two integer and one array.
+First Input consists of size of an array.
+Second give the array elements based on their size.
+Third input consists of the position where we need to delete it.
+Output consists of an array after deletion.
+
+import java.util.Scanner;
+public class Delete
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n,c=0;
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        int b[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int a=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]==a)
+            {
+               c=c+1;
+                
+            }
+        }
+        
+        if(c==0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            for(int i=0;i<n;i++)
+            {
+                if(arr[i]==a)
+                {
+                    
+                }
+                 else
+                 {
+                     System.out.println(arr[i]);
+                 }
+            }
+        }
+     
+      
+}
+}
