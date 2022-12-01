@@ -1,0 +1,39 @@
+Write a program, which will find all such numbers between the user-given range (both included) such that each digit of the number is an even number.
+
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+Input Format:
+The first input consists of an integer type to get starting value.
+The second input consists of an integer type to get the ending value.
+
+Output Format:
+The output consists of all even digit numbers from the given range separated by a comma. If the range is out of bound, print "Invalid Input".
+
+
+import java.util.*;
+class even
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int s=0;
+        if(1<=a&&b<=5000)
+        {
+            for(int i=a;i<b-1;i++)
+            {
+                int r=i/10;
+                if(i%2==0&&r%2==0)
+                {
+                    System.out.print(i);
+                    System.out.print(",");
+                }
+            }
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+    }
+}
