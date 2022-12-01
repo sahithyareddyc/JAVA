@@ -1,0 +1,42 @@
+Write a method that can calculate the square value of n given values until and unless user gives -1.
+
+Sample input:
+
+5
+
+4
+
+3
+
+-1
+
+Sample output:
+25
+
+16
+
+9
+
+
+
+import java.util.*;
+public class square
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        do{
+            n=sc.nextInt();
+            if(n!=-1)
+            {
+                int d=n*n;
+                System.out.println(d);
+            }
+            else
+            {
+                System.out.println("invalid input");
+            }
+        }while(n!=-1);
+    }
+}
