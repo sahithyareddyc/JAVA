@@ -1,0 +1,38 @@
+Write a program to find the sum of Zig-Zag pattern:
+
+INPUT & OUTPUT FORMAT: 
+
+Input consists of 2 integers and 1 2D-array. Integers correspond to the size of rows and columns.
+
+Output consists of the sum of zig zag pattern
+
+
+import java.util.*;
+public class Zigzag
+{
+    public static void main(String args[])
+    {
+       Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int s=0;
+        int a[][]=new int[x][y];
+        for(int i=0;i<x;i++)
+        {
+            for(int j=0;j<y;j++)
+            {
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<x;)
+        {
+            for(int j=0;j<y;j++)
+            {
+                if(i==0&&j<y||i==1&&j==(y-2)||i==(x-1)&&j<y)
+                s=s+a[i][j];
+            }
+             i=i+1;
+        }
+        System.out.println(s);
+    }
+}
