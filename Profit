@@ -1,0 +1,37 @@
+A fruitseller buys a dozen mango at Rs.X. He sells 1 mango at Rs.Y. Write a program to determine the profit or loss in Rs. for the fruitseller.
+
+ Input and Output Format:
+
+Input consists of 2 floating point numbers which correspond to X and Y.
+
+Refer sample input and output for formatting specifications. .
+
+import java.util.*;
+public class Profit
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the price of a dozen mangoes");
+        float a=sc.nextFloat();
+        System.out.println("enter the price at which 1 mango is being sold");
+        float b=sc.nextFloat();
+        Profit1 p=new Profit1();
+        p.Loss(a,b);
+    }
+}
+class Profit1
+{
+    public static void Loss(float a,float b)
+    {
+        float r=a/12;
+        float s=b*12;
+        if(s>a)
+        System.out.printf("profit : Rs.%.2f",(s-a));
+        else if(s<a)
+        System.out.printf("loss : Rs.%.2f",(a-s));
+        else
+         System.out.println("no profit nor loss"); 
+        
+    }
+}
