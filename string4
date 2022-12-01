@@ -1,0 +1,19 @@
+Write a program to find the reverse of the given without string using string library functions: 
+
+Input & Output Format:
+
+Input consists of 1 string.
+
+Output consists of reversed string.
+
+import java.util.*;
+public class String4
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String d=sc.nextLine();
+        StringBuffer f=new StringBuffer(d);
+        System.out.println(f.reverse());
+    }
+}
