@@ -1,0 +1,30 @@
+Write a function which can store the perfect square values in a list. The user will define the range.
+
+
+Sample input:
+
+1
+
+20
+
+Sample output:
+
+4 9 16
+
+
+
+import java.util.*;
+public class perfectsquare
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        for(int i=a+1;i<b;i++)
+        {
+            if(Math.sqrt(i)==(int)Math.sqrt(i))
+            System.out.print(i+" ");
+        }
+    }
+}
